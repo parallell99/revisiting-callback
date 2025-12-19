@@ -7,7 +7,17 @@
 */
 
 // Start Coding Here
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => {
+  if (a === 0 || b === 0) {
+    return `Cannot divide by zero`;
+  }
+  return a / b;
+};
 
+const calculate = (a, b, operation) => operation(a, b);
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15
